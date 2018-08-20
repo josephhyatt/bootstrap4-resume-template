@@ -1,0 +1,138 @@
+html {
+  box-sizing: border-box; }
+
+body {
+  background: #ffffff;
+  font-family: Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased; }
+
+/** ---------------------------- **/
+/** Container Styling **/
+.container {
+  margin-top: 30px; }
+
+/** ---------------------------- **/
+/****************************************/
+/****** container header container ******/
+/****************************************/
+/** row Styling **/
+.row {
+  margin-right: -15px;
+  margin-left: -15px; }
+
+/** ---------------------------- **/
+/** Header Left Styling **/
+.header-container {
+  margin-top: 50px; }
+
+h1 {
+  font-size: 4em;
+  margin-bottom: 0.1em;
+  font-weight: 500; }
+
+h2 {
+  font-weight: normal;
+  font-size: 1.5em; }
+
+/** Header Left Media Queries **/
+@media (min-width: 1200px) {
+  .col-lg-8 {
+    width: 66.66666667%; } }
+
+@media (min-width: 1200px) {
+  .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9 {
+    float: left; } }
+
+@media (min-width: 992px) {
+  .col-md-6 {
+    width: 50%; } }
+
+/** ---------------------------- **/
+/** Header Right Styling **/
+.header-right {
+  text-align: right; }
+
+.header-right p {
+  margin-bottom: 3px; }
+
+.header-right p {
+  font-size: 1em;
+  text-align: right; }
+
+/** ---------------------------- **/
+/** Social Media Icon Styling **/
+ul.icons li {
+  display: inline-block;
+  padding-left: 0.75em; }
+
+.icons {
+  padding: 0;
+  font-size: 1em;
+  margin-bottom: 20px; }
+
+.social-network a.icoGithub:hover {
+  background-color: #F56505; }
+
+.social-network a.icoFacebook:hover {
+  background-color: #3B5998; }
+
+.social-network a.icoTwitter:hover {
+  background-color: #33ccff; }
+
+.social-network a.icoGoogle:hover {
+  background-color: #BD3518; }
+
+.social-network a.icoVimeo:hover {
+  background-color: #0590B8; }
+
+.social-network a.icoLinkedin:hover {
+  background-color: #007bb7; }
+
+.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+  color: #fff; }
+
+a.socialIcon:hover, .socialHoverClass {
+  color: #44BCDD; }
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  background-color: #D3D3D3; }
+
+.social-circle li i {
+  margin: 0;
+  line-height: 50px;
+  text-align: center; }
+
+.social-circle li a:hover i, .triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s; }
+
+.social-circle i {
+  color: #fff;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s; }
+
+/** ---------------------------- **/
+/****************************************/
+/****** container intro container *******/
+/****************************************/
