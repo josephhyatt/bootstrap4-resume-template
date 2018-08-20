@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/jhyatt1017/bootstrap4-resume-template/issues"
   },
-  "homepage": "https://github.com/jhyatt1017/bootstrap4-resume-template#readme"
+  "homepage": "https://github.com/jhyatt1017/bootstrap4-resume-template#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.6",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
 }
