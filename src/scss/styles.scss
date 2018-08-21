@@ -14,6 +14,14 @@ body {
   -webkit-font-smoothing: antialiased; 
 }
 
+.container {
+  margin-top: 30px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .p-border {
   width: 15%;
   float: left;
@@ -32,40 +40,39 @@ body {
   font-size: 1em;
 }
 
-// .center-text {
-//   text-align: center; }
-
-
-
-// .header-contianer {
-//   margin-top:50px;
-// }
-
-// .header-right {
-//   text-align: right;
-// }
-
-// .header-left {
-//   margin-top: 30px;
-// }
-
-// .header-right p {
-//   font-size: 1.6em;
-//   text-align: right;
-// }
-
-
-/** ---------------------------- **/
-
-/** Container Styling **/
-
-.container {
-  margin-top: 30px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+.right-column p {
+  text-align: left;
+  margin: 20px 10px; 
+  font-size: 1em;
 }
+
+h1 {
+  font-size: 3.5em;
+  margin-bottom: 0.1em;
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: 100;
+  font-size: 1.5em;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 2em;
+  text-align: center;
+  border-bottom: dashed 3px #CCCCCC;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+}
+
+h4 {
+  font-weight: 300;
+  font-size: 2em;
+  margin-bottom: 3px;
+}
+
+/** Container Media Queries **/
 
 @media (min-width: 1200px) {
   .container {
@@ -76,7 +83,7 @@ body {
 @media (min-width: 992px) {
 .col-md-9 {
     width: 75%;
-}
+  }
 }
 
 /** ---------------------------- **/
@@ -92,15 +99,8 @@ body {
   margin-top: 50px;
 }
 
-h1 {
-  font-size: 4em;
-  margin-bottom: 0.1em;
-  font-weight: 500;
-}
-
-h2 {
-  font-weight: 100;
-  font-size: 1.5em;
+.header-left {
+  margin-top: 30px;
 }
 
 .profile-img {
@@ -158,23 +158,6 @@ ul.icons li {
   padding-left: .75em;
 }
 
-// ul.icons a {
-//   transition: background-color 0.25s ease-in-out;
-//   display: inline-block;
-//   width: 2.75em;
-//   height: 2.75em;
-//   line-height: 2.8em;
-//   text-align: center;
-//   border: 0;
-//   box-shadow: none;
-//   padding:0;
-//   border-radius: 100%;
-//   color: #aaa;
-//   -moz-transition: background-color 0.25s ease-in-out;
-//     -webkit-transition: background-color 0.25s ease-in-out;
-//       -ms-transition: background-color 0.25s ease-in-out;
-// }
-
 .icons {
   padding: 0;
   font-size: 1em;
@@ -183,48 +166,32 @@ ul.icons li {
 
 .header-right p {
   font-size: 1em;
+  letter-spacing: .3px;
 }
 
 .header-right a {
-  text-decoration: none;
   color: inherit;
-  font-weight: 500;
+  font-weight: 600;
 }
-
-// ul.social-network {
-// 	list-style: none;
-// 	display: inline;
-// 	margin-left:0 !important;
-// 	padding: 0;
-// }
-
-// ul.social-network li {
-// 	display: inline;
-// 	margin: 0 5px;
-// }
 
 .social-network a.icoGithub:hover {
-	background-color: #F56505;
-}
-
-.social-network a.icoFacebook:hover {
-	background-color:#3B5998;
-}
-
-.social-network a.icoTwitter:hover {
-	background-color:#33ccff;
-}
-
-.social-network a.icoGoogle:hover {
-	background-color:#BD3518;
-}
-
-.social-network a.icoVimeo:hover {
-	background-color:#0590B8;
+	background-color: #000;
 }
 
 .social-network a.icoLinkedin:hover {
-	background-color:#007bb7;
+	background-color:#1476B1;
+}
+
+.social-network a.icoTwitter:hover {
+	background-color:#2A9FEF;
+}
+
+.social-network a.icoFacebook:hover {
+	background-color:#4567AE;
+}
+
+.social-network a.icoGoogle:hover {
+	background-color:#DB554B;
 }
 
 .social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
@@ -260,11 +227,11 @@ a.socialIcon:hover, .socialHoverClass {
 	-webkit-transform: rotate(360deg);
 	-ms--transform: rotate(360deg);
 	transform: rotate(360deg);
-	-webkit-transition: all 0.2s;
-	-moz-transition: all 0.2s;
-	-o-transition: all 0.2s;
-	-ms-transition: all 0.2s;
-	transition: all 0.2s;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	-ms-transition: all 0.4s;
+	transition: all 0.4s;
 }
 
 .social-circle i {
@@ -276,31 +243,13 @@ a.socialIcon:hover, .socialHoverClass {
 	transition: all 0.8s;
 }
 
-/** ---------------------------- **/
-
-
 /****************************************/
 /************ page content **************/
 /****************************************/
 
-
-/********** About Me **********/ 
-
 .page-content {
   padding: 0;
 }
-
-/** About Me Header **/
-h3 {
-  font-weight: 300;
-  font-size: 2em;
-  text-align: center;
-  border-bottom: dashed 3px #CCCCCC;
-  padding-bottom: 10px;
-  margin-bottom: 40px;
-}
-
-
 
 mark {
   padding: 2px 4px;
@@ -313,13 +262,6 @@ mark {
 }
 
 /********** Projects **********/ 
-
-h4 {
-  font-weight: 300;
-  font-size: 2em;
-  margin-bottom: 3px;
-}
-
 .fa {
   display: inline-block;
   font-size: 1.6em;
@@ -345,13 +287,32 @@ ol, ul {
   margin-bottom: 10px;
 }
 
-p {
-  margin: 0 0 0.75em;
-}
-
+/** Projects Media Queries **/
 
 @media (min-width: 992px) {
 .col-md-9 {
     width: 75%;
+  }
 }
+
+/********** Footer **********/ 
+
+.footer-container {
+  margin-top: 100px;
+}
+
+.footer-container p {
+  text-align: center;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.footer-container a {
+  color: inherit;
+  font-style: italic;
+  font-weight: 300;
+}
+
+p {
+  margin: 0 0 0.75em;
 }
