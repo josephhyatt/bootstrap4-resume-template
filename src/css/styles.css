@@ -216,8 +216,9 @@ h4 {
   -moz-osx-font-smoothing: grayscale; }
 
 p.quote {
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-style: italic;
+  font-weight: 100;
   padding: 10px 50px; }
 
 p, ul {
