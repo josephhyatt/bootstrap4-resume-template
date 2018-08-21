@@ -19,6 +19,19 @@ body {
   float: left;
 }
 
+.left-column a {
+  font-size: 1.3em;
+  color: inherit;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.left-column p {
+  text-align: left;
+  margin-bottom: 3px;
+  font-size: 1em;
+}
+
 // .center-text {
 //   text-align: center; }
 
@@ -142,7 +155,7 @@ h2 {
 
 ul.icons li {
   display: inline-block;
-  padding-left: 0.75em;
+  padding-left: .75em;
 }
 
 // ul.icons a {
@@ -307,17 +320,9 @@ h4 {
   margin-bottom: 3px;
 }
 
-.project .left-column a {
-  font-size: 1.3em;
-  color: inherit;
-  font-style: italic;
-  font-weight: 100; 
-  
-}
-
 .fa {
   display: inline-block;
-  font-size: inherit;
+  font-size: 1.6em;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
