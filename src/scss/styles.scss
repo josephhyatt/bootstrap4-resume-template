@@ -340,6 +340,11 @@ p, ul {
   text-align: justify;
 }
 
+ol, ul {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
 p {
   margin: 0 0 0.75em;
 }
