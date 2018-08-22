@@ -1,15 +1,10 @@
 /****************************************/
 /************ global styling ************/
 /****************************************/
-
-// html {
-//   box-sizing: border-box;
-// }
-
 body {
   background: #FDFEFF;
   font-family: 'Jura', sans-serif;
-  // font-size: 1em;
+  font-weight: 800;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased; 
 }
@@ -39,7 +34,7 @@ body {
 }
 
 .left-column p {
-  text-align: left;
+  text-align: justify;
   margin-bottom: 3px;
   font-size: em;
 }
@@ -49,7 +44,7 @@ body {
 }
 
 .right-column p {
-  // text-align: left; 
+  text-align: justify; 
   font-size: 1.1em;
   font-weight: 500;
 }
@@ -93,6 +88,16 @@ h4 {
   margin-top: 30px;
 }
 
+.header-left h1 {
+  letter-spacing: -1px;
+}
+
+.header-left h2 {
+  margin-top: -10px
+}
+
+
+
 
 /** ---------------------------- **/
 
@@ -105,8 +110,7 @@ h4 {
   font-size: 1em;
   text-align: right;
   margin-bottom: 3px;
-  margin-right: 19px;
-  font-size: 1em;
+  margin-right: 0px;
   font-weight: 400;
 }
 
@@ -310,17 +314,29 @@ p {
     margin: 50px auto;
   }
 
+  .header-left h1 {
+    letter-spacing: -1px;
+  }
+
   .header-left {
     text-align: center;
   }
 
-  .header-right .icons { // stopped here
-    margin-left: -153px;
-    padding-left: 60px;
+  .header-right .icons li {
+    display: inline-block;
+    left: 20px;
   }
 
-  .header-container .card {
-    margin: auto;
+  .header-left h2 {
+    margin-top: -10px
+  }
+
+  .intro-container {
+    margin: -30px auto;
+  }
+
+  .projects-container {
+    margin: 50px auto;
   }
 }
 
@@ -328,6 +344,14 @@ p {
 /******************************************/
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) { 
+
+  .header-left h1 {
+    letter-spacing: -1px;
+  }
+
+  .intro-container {
+    margin: -20px auto;
+  }
 
   .header-container {
     width: 100%;
@@ -338,18 +362,24 @@ p {
     text-align: center;
   }
 
-  .icons li {
-    position: relative;
-    left: 140px;
-    bottom: 35px;
-    margin: 3px auto;
+  .header-left h2 {
+    margin-top: -10px
   }
 
-  .card {
-    width: 300px;
+  .icons li {
+    position: relative;
+    left: 100px;
+    bottom: 55px;
+    margin: -40px auto;
+    padding: 10px;
+  }
+
+  .header-right .card p {
+    position: relative;
     text-decoration: none;
     border: none;
-    margin: auto;
+    margin: 1px auto;
+    
   }
   .header-left {
     margin-top: 0px;
@@ -359,6 +389,14 @@ p {
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
 
+  .header-left h1 {
+    letter-spacing: -1px;
+  }
+
+  .header-left h2 {
+    margin-top: -10px
+  }
+  
   .icons li {
     display: inline-block;
     margin-top: 60px;

@@ -4,6 +4,7 @@
 body {
   background: #FDFEFF;
   font-family: 'Jura', sans-serif;
+  font-weight: 800;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased; }
 
@@ -28,7 +29,7 @@ body {
   color: #58963C; }
 
 .left-column p {
-  text-align: left;
+  text-align: justify;
   margin-bottom: 3px;
   font-size: em; }
 
@@ -36,6 +37,7 @@ body {
   font-weight: 800; }
 
 .right-column p {
+  text-align: justify;
   font-size: 1.1em;
   font-weight: 500; }
 
@@ -71,14 +73,19 @@ h4 {
 .header-left {
   margin-top: 30px; }
 
+.header-left h1 {
+  letter-spacing: -1px; }
+
+.header-left h2 {
+  margin-top: -10px; }
+
 /** ---------------------------- **/
 /** Header Right Styling **/
 .header-container p {
   font-size: 1em;
   text-align: right;
   margin-bottom: 3px;
-  margin-right: 19px;
-  font-size: 1em;
+  margin-right: 0px;
   font-weight: 400; }
 
 .card {
@@ -231,35 +238,52 @@ p {
   .header-container {
     width: 100%;
     margin: 50px auto; }
+  .header-left h1 {
+    letter-spacing: -1px; }
   .header-left {
     text-align: center; }
-  .header-right .icons {
-    margin-left: -153px;
-    padding-left: 60px; }
-  .header-container .card {
-    margin: auto; } }
+  .header-right .icons li {
+    display: inline-block;
+    left: 20px; }
+  .header-left h2 {
+    margin-top: -10px; }
+  .intro-container {
+    margin: -30px auto; }
+  .projects-container {
+    margin: 50px auto; } }
 
 /******************************************/
 @media (max-width: 767.98px) {
+  .header-left h1 {
+    letter-spacing: -1px; }
+  .intro-container {
+    margin: -20px auto; }
   .header-container {
     width: 100%;
     margin: 50px auto; }
   .header-left {
     text-align: center; }
+  .header-left h2 {
+    margin-top: -10px; }
   .icons li {
     position: relative;
-    left: 140px;
-    bottom: 35px;
-    margin: 3px auto; }
-  .card {
-    width: 300px;
+    left: 100px;
+    bottom: 55px;
+    margin: -40px auto;
+    padding: 10px; }
+  .header-right .card p {
+    position: relative;
     text-decoration: none;
     border: none;
-    margin: auto; }
+    margin: 1px auto; }
   .header-left {
     margin-top: 0px; } }
 
 @media (max-width: 991.98px) {
+  .header-left h1 {
+    letter-spacing: -1px; }
+  .header-left h2 {
+    margin-top: -10px; }
   .icons li {
     display: inline-block;
     margin-top: 60px; }
