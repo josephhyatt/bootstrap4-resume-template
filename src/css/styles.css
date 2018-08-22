@@ -1,13 +1,9 @@
 /****************************************/
 /************ global styling ************/
 /****************************************/
-html {
-  box-sizing: border-box; }
-
 body {
-  background: #ffffff;
+  background: #FDFEFF;
   font-family: 'Jura', sans-serif;
-  font-size: 1em;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased; }
 
@@ -34,14 +30,12 @@ body {
 .left-column p {
   text-align: left;
   margin-bottom: 3px;
-  font-size: 1em; }
+  font-size: em; }
 
 .left-column b {
   font-weight: 800; }
 
 .right-column p {
-  text-align: left;
-  margin: 20px 10px;
   font-size: 1.1em;
   font-weight: 500; }
 
@@ -55,7 +49,7 @@ h2 {
   font-size: 1.5em; }
 
 h3 {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 2em;
   text-align: center;
   border-bottom: dashed 3px #CCCCCC;
@@ -63,12 +57,10 @@ h3 {
   margin-bottom: 40px; }
 
 h4 {
-  font-weight: 300;
-  font-size: 2em;
-  margin-bottom: 3px;
-  font-weight: 500; }
+  font-weight: 400;
+  font-size: 1.8em;
+  margin-bottom: 3px; }
 
-/** ---------------------------- **/
 /****************************************/
 /*********** header container ***********/
 /****************************************/
@@ -81,65 +73,63 @@ h4 {
 
 /** ---------------------------- **/
 /** Header Right Styling **/
-.header-right {
-  text-align: right; }
-
-.header-right p {
+.header-container p {
   font-size: 1em;
   text-align: right;
-  margin-bottom: 3px; }
+  margin-bottom: 3px;
+  margin-right: 19px;
+  font-size: 1em;
+  font-weight: 400; }
 
-.header-right p a:hover {
+.card {
+  width: 300px;
+  text-decoration: none;
+  border: none;
+  margin: auto; }
+
+.header-container a:hover {
   color: #58963C; }
+
+.header-container a {
+  color: inherit;
+  font-weight: 700; }
 
 /** ---------------------------- **/
 /** Social Media Icon Styling **/
-ul.icons li {
+.icons li {
   display: inline-block;
-  padding-left: .75em; }
+  margin: 10px 8px;
+  margin-left: 10px;
+  float: left; }
 
 .icons {
   padding: 0;
   font-size: 1em;
   margin-bottom: 20px; }
 
-.header-right p {
-  font-size: 1em;
-  font-weight: 400; }
-
-.header-right a {
-  color: inherit;
-  font-weight: 700; }
-
-.social-network a.icoGithub:hover {
+.social-network a.iconGithub:hover {
   background-color: #000000; }
 
-.social-network a.icoLinkedin:hover {
+.social-network a.iconLinkedin:hover {
   background-color: #1476B1; }
 
-.social-network a.icoTwitter:hover {
+.social-network a.iconTwitter:hover {
   background-color: #2A9FEF; }
 
-.social-network a.icoFacebook:hover {
+.social-network a.iconFacebook:hover {
   background-color: #4567AE; }
 
-.social-network a.icoReddit:hover {
+.social-network a.iconReddit:hover {
   background-color: #FD4C26; }
-
-.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
-.social-network a.icoReddit:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
-  color: #fff; }
 
 a.socialIcon:hover, .socialHoverClass {
   color: #44BCDD; }
 
 .social-circle li a {
   display: inline-block;
-  position: relative;
-  margin: 0 auto 0 auto;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
+  -moz-border-radius: 40%;
+  -webkit-border-radius: 40%;
+  border-radius: 40%;
   text-align: center;
   width: 50px;
   height: 50px;
@@ -152,15 +142,15 @@ a.socialIcon:hover, .socialHoverClass {
   text-align: center; }
 
 .social-circle li a:hover i, .triggeredHover {
-  -moz-transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-  -ms--transform: rotate(360deg);
-  transform: rotate(360deg);
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  transition: all 0.4s; }
+  -moz-transform: rotate(1080deg);
+  -webkit-transform: rotate(1080deg);
+  -ms--transform: rotate(1080deg);
+  transform: rotate(1080deg);
+  -webkit-transition: all 1.4s;
+  -moz-transition: all 1.4s;
+  -o-transition: all 1.4s;
+  -ms-transition: all 1.4s;
+  transition: all 1.4s; }
 
 .social-circle i {
   color: #fff;
@@ -173,9 +163,6 @@ a.socialIcon:hover, .socialHoverClass {
 /****************************************/
 /************ page content **************/
 /****************************************/
-.page-content {
-  padding: 0; }
-
 .profile-img {
   width: 220px;
   height: 220px;
@@ -195,7 +182,6 @@ mark {
   font-size: 90%;
   color: #fff;
   background-color: #333;
-  border-radius: 3px;
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25); }
 
@@ -208,14 +194,10 @@ mark {
   -moz-osx-font-smoothing: grayscale; }
 
 p.quote {
-  font-size: 1.2em;
-  font-style: italic;
-  font-weight: 100;
-  padding: 10px 50px; }
-
-p, ul {
   font-size: 1em;
-  text-align: justify; }
+  font-style: italic;
+  font-weight: 300;
+  padding: 10px 50px; }
 
 ol, ul {
   margin-top: 0;
@@ -240,3 +222,67 @@ p {
 
 .footer-container a:hover {
   color: #58963C; }
+
+/********************************/
+/****************************************/
+/************ Media Queries *************/
+/****************************************/
+@media (max-width: 575.98px) {
+  .header-container {
+    width: 100%;
+    margin: 50px auto; }
+  .header-left {
+    text-align: center; }
+  .header-right .icons {
+    margin-left: -153px;
+    padding-left: 60px; }
+  .header-container .card {
+    margin: auto; } }
+
+/******************************************/
+@media (max-width: 767.98px) {
+  .header-container {
+    width: 100%;
+    margin: 50px auto; }
+  .header-left {
+    text-align: center; }
+  .icons li {
+    position: relative;
+    left: 140px;
+    bottom: 35px;
+    margin: 3px auto; }
+  .card {
+    width: 300px;
+    text-decoration: none;
+    border: none;
+    margin: auto; }
+  .header-left {
+    margin-top: 0px; } }
+
+@media (max-width: 991.98px) {
+  .icons li {
+    display: inline-block;
+    margin-top: 60px; }
+  .card {
+    width: 300px;
+    text-decoration: none;
+    border: none;
+    margin: auto; }
+  .profile-img {
+    margin: 0 auto;
+    margin-bottom: 30px; }
+  .right-column {
+    text-align: center; } }
+
+@media (max-width: 1199.98px) {
+  .icons li {
+    display: inline-block;
+    padding-left: .2em;
+    float: left; }
+  .card {
+    width: 300px;
+    text-decoration: none;
+    border: none;
+    margin: auto; } }
+
+/******************************************/
