@@ -29,5 +29,8 @@
   },
   "engines": {
     "node": "8.11.4"
+  },
+  "scripts": {
+    "start": "node gulpfile.js"
   }
 }
