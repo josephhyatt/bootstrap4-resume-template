@@ -34,7 +34,7 @@ body {
 }
 
 .left-column p {
-  text-align: justify;
+  // text-align: justify;
   margin-bottom: 3px;
   font-weight: 700;
 }
@@ -46,8 +46,9 @@ p.make-bold {
 
 .right-column p {
   text-align: justify; 
-  font-size: 1.1em;
+  font-size: 1.2em;
   font-weight: 500;
+  letter-spacing: .1px;
 }
 
 h1 {
@@ -70,6 +71,16 @@ h3 {
   margin-bottom: 40px;
 }
 
+.projects-container .second-project {
+  width: 50%;
+  margin: 40px auto;
+}
+
+.education-container .second-project {
+  width: 50%;
+  margin: 40px auto;
+}
+
 h4 {
   font-weight: 600;
   font-size: 1.8em;
@@ -89,24 +100,13 @@ h4 {
   margin-top: 30px;
 }
 
-.header-left h1 {
-  letter-spacing: -1px;
-}
-
 .header-left h2 {
   margin-top: -10px
 }
 
-
-
-
 /** ---------------------------- **/
 
 /** Header Right Styling **/
-// .header-right {
-//   text-align: right;
-// }
-
 .header-container p {
   font-size: 1em;
   text-align: right;
@@ -136,9 +136,6 @@ h4 {
 /** Social Media Icon Styling **/
 .icons li {
   display: inline-block;
-  // padding-top: 2.5em;
- 
-  // padding-bottom: .80em;
   margin: 10px 8px;
   margin-left: 10px;
   float: left;
@@ -176,8 +173,6 @@ a.socialIcon:hover, .socialHoverClass {
 
 .social-circle li a {
 	display:inline-block;
-	// position: relative;
-	// margin: 0 auto 0 auto;
 	-moz-border-radius: 40%;
 	-webkit-border-radius: 40%;
 	border-radius: 40%;
@@ -219,15 +214,12 @@ a.socialIcon:hover, .socialHoverClass {
 /************ page content **************/
 /****************************************/
 
-// .page-content {
-//   padding: 0;
-// }
-
 .profile-img {
   width: 220px;
   height: 220px;
   margin: 0 auto;
   margin-bottom: 20px;
+  // filter: grayscale(100%);
   display: block;
   border-radius: 100px;
   background-size: cover;
@@ -243,7 +235,6 @@ mark {
   font-size: 90%;
   color: #fff;
   background-color: #333;
-  // border-radius: 3px;
   -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,0.25);
   box-shadow: inset 0 -1px 0 rgba(0,0,0,0.25);
 }
@@ -260,14 +251,9 @@ mark {
 p.quote {
   font-size: 1em;
   font-style: italic;
-  font-weight: 300;
-  padding: 10px 50px;
+  font-weight: 800;
+  padding: 0px 50px;
 }
-
-// p, ul {
-//   font-size: 1em;
-//   text-align: justify;
-// }
 
 ol, ul {
   margin-top: 0;
@@ -276,7 +262,7 @@ ol, ul {
 
 /********** Footer **********/ 
 .footer-container {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 p {
@@ -298,10 +284,6 @@ p {
 .footer-container a:hover {
   color: #58963C;
 }
-
-
-/********************************/
-
 
 /****************************************/
 /************ Media Queries *************/
