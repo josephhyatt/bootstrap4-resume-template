@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jhyatt1017/bootstrap4-resume-template.git"
+    "url": "git+https://github.com/josephhyatt/bootstrap4-resume-template.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jhyatt1017/bootstrap4-resume-template/issues"
+    "url": "https://github.com/josephhyatt/bootstrap4-resume-template/issues"
   },
-  "homepage": "https://github.com/jhyatt1017/bootstrap4-resume-template#readme",
+  "homepage": "https://github.com/josephhyatt/bootstrap4-resume-template#readme",
   "devDependencies": {
     "browser-sync": "^2.24.6",
     "gulp": "^3.9.1",
