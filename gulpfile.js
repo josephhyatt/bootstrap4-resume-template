@@ -32,3 +32,4 @@ gulp.task('serve', ['sass'], function() {
 // allows us to simply jump into the command line
 // and run any command specified in the square brackets
 gulp.task('default', ['js','serve']);
+
