@@ -18,7 +18,7 @@ gulp.task('js', function () {
     .pipe(gulp.dest("src/js"))
     .pipe(browserSync.stream());
 });
-/*
+
 // Static Server + watching scss/html files
 gulp.task('serve', ['sass'], function () {
   // launch a localhost:3000
@@ -28,7 +28,7 @@ gulp.task('serve', ['sass'], function () {
   gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'], ['sass']);
   gulp.watch("src/*.html").on('change', browserSync.reload);
 });
-*/
+
 // Any gulp task thats named 'default' 
 // allows us to simply jump into the command line
 // and run any command specified in the square brackets
