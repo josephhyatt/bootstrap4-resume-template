@@ -2,6 +2,8 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
+const express = require(“express”);
+const PORT = process.env.PORT
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function () {
@@ -18,6 +20,12 @@ gulp.task('js', function () {
     .pipe(gulp.dest("src/js"))
     .pipe(browserSync.stream());
 });
+
+const app = express();
+  app.get("/", (req, res) => {
+    res.send({ hello: "world" });
+  });
+app.listen(PORT);
 
 // Static Server + watching scss/html files
 gulp.task('serve', ['sass'], function () {
