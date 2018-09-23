@@ -2,6 +2,9 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
+var express = require('express');
+var app = express();
+var port = process.env.PORT || 8080;
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function () {
@@ -27,6 +30,10 @@ gulp.task('serve', ['sass'], function () {
   });
   gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'], ['sass']);
   gulp.watch("src/*.html").on('change', browserSync.reload);
+});
+
+app.listen(port, function () {
+  console.log('Our app is running on http://localhost:' + port);
 });
 
 // Any gulp task thats named 'default' 
