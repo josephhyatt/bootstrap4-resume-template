@@ -2,7 +2,16 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
+var port = Number(process.env.PORT || 3000);
+var express = require('express');
+var app = express();
 
+app.use(express.static(__dirname + '/src'));
+app.get('/', function (req, res) {
+  res.sendFile('/src/index.html');
+});
+
+app.listen(port);
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function () {
   return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'])

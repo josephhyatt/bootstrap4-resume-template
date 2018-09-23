@@ -1,7 +1,7 @@
 {
   "name": "bootstrap4-resume-template",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "description": "",
   "scripts": {
     "start": "node gulpfile.js"
