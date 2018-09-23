@@ -2,11 +2,6 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
-var port = process.env.PORT || 8000;
-
-server.listen(port, function () {
-  console.log("App is running on port " + port);
-});
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function () {
