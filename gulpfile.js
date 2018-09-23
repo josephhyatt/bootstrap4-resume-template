@@ -2,7 +2,7 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
-var PORT = process.env.PORT || 5000;
+
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function () {
   return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'])
@@ -19,13 +19,6 @@ gulp.task('js', function () {
     .pipe(browserSync.stream());
 });
 
-
-//Heroku login 
-server.listen(PORT, function () {
-  console.log('Chat server running');
-});
-
-/*
 // Static Server + watching scss/html files
 gulp.task('serve', ['sass'], function () {
   // launch a localhost:3000
@@ -35,7 +28,7 @@ gulp.task('serve', ['sass'], function () {
   gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'], ['sass']);
   gulp.watch("src/*.html").on('change', browserSync.reload);
 });
-*/
+
 // Any gulp task thats named 'default' 
 // allows us to simply jump into the command line
 // and run any command specified in the square brackets
