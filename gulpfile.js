@@ -2,7 +2,7 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
-var port = Number(process.env.PORT || 3000);
+var PORT = Number(process.env.PORT || 3000);
 var express = require('express');
 var app = express();
 
@@ -11,7 +11,7 @@ app.get('/', function (req, res) {
   res.sendFile('/src/index.html');
 });
 
-app.listen(port);
+app.listen(PORT);
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function () {
   return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'])
@@ -38,7 +38,7 @@ gulp.task('serve', ['sass'], function () {
   gulp.watch("src/*.html").on('change', browserSync.reload);
 });
 
-// Any gulp task thats named 'default' 
+// Any gulp task thats named 'default'
 // allows us to simply jump into the command line
 // and run any command specified in the square brackets
 gulp.task('default', ['js', 'serve']);
