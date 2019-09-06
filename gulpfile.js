@@ -2,7 +2,7 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
-const PORT = Number(process.env.PORT || 3000);
+const PORT = process.env.PORT || 3000;
 var express = require('express');
 var app = express();
 
